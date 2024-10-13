@@ -11,11 +11,17 @@
     <!-- swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- js -->
     <script src="./js/script.js" defer></script>
 
     <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- aos jc -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>AstonMartin</title>
 </head>
 <body>
@@ -23,7 +29,6 @@
         <header class="header_area">
             <div class="con_box">
                 <a href="#none" id="hamburger"><span></span><span></span></a>
-
                 <ul class="main_menu">
                     <li><a href="#none" class="menu">Models</a></li>
                     <li><a href="#none" class="menu">Owner</a></li>
@@ -149,7 +154,7 @@
 
         <div class="main_section sec1">
             <div class="con_box">
-                <div class="box1">
+                <div data-aos="fade-up" data-aos-duration="3000" class="box1">
                     <video src="./image/sec1_1.mp4" autoplay muted loop playsinline></video>
                     
                     <div class="on_text">
@@ -169,7 +174,7 @@
                         <h3 class="sub_text">Ushering in a glorious new era of v12 supremacy.Vanquish stands unrivalled at the peak of british mastery.</h3>
                     </div>
                 </div>
-                <div class="box2">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="box2">
                     <video src="./image/sec1_2.mp4" autoplay muted loop playsinline></video>
                     
                     <div class="on_text">
@@ -186,7 +191,7 @@
                         <h3 class="sub_text">DBX707. The supercar of SUVs. Uniting the latest interior technology with blistering performance, supreme dynamics and absolute luxury. It dominates in every sense.</h3>
                     </div>
                 </div>
-                <div class="box3">
+                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="box3">
                     <video src="./image/sec1_3.mp4" autoplay muted loop playsinline></video>
                     
                     <div class="on_text">
@@ -203,7 +208,7 @@
                         <h3 class="sub_text">Vantage. A car forged in the fires of the limit. Not just a shrine to lap times but standing as a statue to thrill seekers. Stripping away the barriers between you and the road. A sports car made to get you back where you belong - driving at the limit.</h3>
                     </div>
                 </div>
-                <div class="box4">
+                <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="box4">
                     <video src="./image/sec1_4.mp4" autoplay muted loop playsinline></video>
                     
                     <div class="on_text">
@@ -219,7 +224,9 @@
                         <h1 class="car_text">DB12</h1>
                         <h3 class="sub_text">This is no mere GT. This is world’s first super tourer.</h3>
                     </div></div>
-                <div class="box5">
+                <div data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500" class="box5">
                     <video src="./image/sec1_5.mp4" autoplay muted loop playsinline></video>
                     
                     <div class="on_text">
@@ -246,42 +253,57 @@
                     <h2 class="main_news_date">17 Sep 2024</h2>
                     <ul class="main_news">
                         <li class="main_news_text">Aston Martin backed sustainable aluminium project awarded £6million of UK Government funding</li>
-                        <a href="#none" class="news_ex ex">EXPLORE</a>
+                        <a href="#none" class="news_ex">EXPLORE</a>
                     </ul>
                 </div>
-                <div class="sub_news">
-                    <div class="sub_news_box1">
-                        <img src="./image/sec2_2.webp" alt="">
-                        <h2 class="sub_news_date">4 Sep 2024</h2>
-                        <ul class="sub_news">
-                            <li class="sub_news_text">F1® car for the road delivered to F1® driver, Fernando Alonso</li>
-                            <a href="#none" class="news_ex ex">EXPLORE</a>
-                        </ul>
+
+                <div class="sub_news newsSwiper">
+                    <div class="sub_news_wrapper swiper-wrapper">
+                        <div class="sub_news_box1 swiper-slide">
+                            <img src="./image/sec2_2.webp" alt="">
+                            <div class="sub_news_text">
+                                <h2 class="date">4 Sep 2024</h2>
+                                <ul class="sub_news">
+                                    <li class="news_text">F1® car for the road delivered to F1® driver, Fernando Alonso</li>
+                                    <a href="#none" class="news_ex">EXPLORE</a>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="sub_news_box2 swiper-slide">
+                            <img src="./image/sec2_3.webp" alt="">
+                            <div class="sub_news_text">
+                                <h2 class="date">3 Sep 2024</h2>
+                                <ul class="sub_news">
+                                    <li class="news_text">Aston Martin Vanquish unveiled with stunning world premiere in Venice</li>
+                                    <a href="#none" class="news_ex">EXPLORE</a>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="sub_news_box3 swiper-slide">
+                            <img src="./image/sec2_4.webp" alt="">
+                            <div class="sub_news_text">
+                                <h2 class="date">2 Sep 2024</h2>
+                                <ul class="sub_news">
+                                    <li class="news_text">Aston Martin Vanquish - An icon returns to reign supreme</li>
+                                    <a href="#none" class="news_ex">EXPLORE</a>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="sub_news_box4 swiper-slide">
+                            <img src="./image/sec2_5.webp" alt="">
+                            <div class="sub_news_text">
+                                <h2 class="date">2 Sep 2024</h2>
+                                <ul class="sub_news">
+                                    <li class="news_text">New Aston Martin Vantage GT3 and The Heart of Racing score maiden victory in FIA World Endurance Championship</li>
+                                    <a href="#none" class="news_ex">EXPLORE</a>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="sub_news_box2">
-                        <img src="./image/sec2_3.webp" alt="">
-                        <h2 class="sub_news_date">3 Sep 2024</h2>
-                        <ul class="sub_news">
-                            <li class="sub_news_text">Aston Martin Vanquish unveiled with stunning world premiere in Venice</li>
-                            <a href="#none" class="news_ex ex">EXPLORE</a>
-                        </ul>
-                    </div>
-                    <div class="sub_news_box3">
-                        <img src="./image/sec2_4.webp" alt="">
-                        <h2 class="sub_news_date">2 Sep 2024</h2>
-                        <ul class="sub_news">
-                            <li class="sub_news_text">Aston Martin Vanquish - An icon returns to reign supreme</li>
-                            <a href="#none" class="news_ex ex">EXPLORE</a>
-                        </ul>
-                    </div>
-                    <div class="sub_news_box4">
-                        <img src="./image/sec2_5.webp" alt="">
-                        <h2 class="sub_news_date">2 Sep 2024</h2>
-                        <ul class="sub_news">
-                            <li class="sub_news_text">New Aston Martin Vantage GT3 and The Heart of Racing score maiden victory in FIA World Endurance Championship</li>
-                            <a href="#none" class="news_ex ex">EXPLORE</a>
-                        </ul>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -292,27 +314,39 @@
                 <div class="story_box">
                     <div class="story_box1">
                         <img src="./image/sec3_1.webp" alt="">
-                        <ul class="story_text">
-                            <li><a href="#none" class="story_top">EXPERIENCE</a></li>
-                            <li><a href="#none" class="story_mid">Welcome to Q New York</a></li>
-                            <li><a href="#none" class="story_bot">Mar 14 2024</a></li>
-                        </ul>
+                        <div class="story_text_box">
+                            <ul class="story_text">
+                                <li><a href="#none" class="story_top story">EXPERIENCE</a></li>
+                                <li><a href="#none" class="story_mid story">Welcome to Q New York</a></li>
+                            </ul>
+                            <div class="story_date">
+                                <a href="#none" class="story_bot">Mar 14 2024</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="story_box2">
-                        <img src="./image/sec3_1.webp" alt="">
-                        <ul class="story_text">
-                            <li><a href="#none" class="story_top">MOTORSPORT</a></li>
-                            <li><a href="#none" class="story_mid">Vantage GT3 strikes gold at the 2024 24 Hours of Spa</a></li>
-                            <li><a href="#none" class="story_bot">Aug 22 2024</a></li>
-                        </ul>
+                        <img src="./image/sec3_2.webp" alt="">
+                        <div class="story_text_box">
+                            <ul class="story_text">
+                                <li><a href="#none" class="story_top story">MOTORSPORT</a></li>
+                                <li><a href="#none" class="story_mid story">Vantage GT3 strikes gold at the 2024 24 Hours of Spa</a></li>
+                            </ul>
+                            <div class="story_date">
+                                <a href="#none" class="story_bot">Aug 22 2024</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="story_box3">
-                        <img src="./image/sec3_1.webp" alt="">
-                        <ul class="story_text">
-                            <li><a href="#none" class="story_top">PRODUCT</a></li>
-                            <li><a href="#none" class="story_mid">V12. Illustrius and Immortal</a></li>
-                            <li><a href="#none" class="story_bot">Aug 27 2024</a></li>
-                        </ul>
+                        <img src="./image/sec3_3.webp" alt="">
+                        <div class="story_text_box">
+                            <ul class="story_text">
+                                <li><a href="#none" class="story_top story">PRODUCT</a></li>
+                                <li><a href="#none" class="story_mid story">V12. Illustrius and Immortal</a></li>
+                            </ul>
+                            <div class="story_date">
+                                <a href="#none" class="story_bot">Aug 27 2024</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -367,9 +401,9 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" height="800" width="1200" viewBox="-204.79995 -341.33325 1774.9329 2047.9995"><path d="M1365.333 682.667C1365.333 305.64 1059.693 0 682.667 0 305.64 0 0 305.64 0 682.667c0 340.738 249.641 623.16 576 674.373V880H402.667V682.667H576v-150.4c0-171.094 101.917-265.6 257.853-265.6 74.69 0 152.814 13.333 152.814 13.333v168h-86.083c-84.804 0-111.25 52.623-111.25 106.61v128.057h189.333L948.4 880H789.333v477.04c326.359-51.213 576-333.635 576-674.373" fill="#100f0d"/><path d="M948.4 880l30.267-197.333H789.333V554.609C789.333 500.623 815.78 448 900.584 448h86.083V280s-78.124-13.333-152.814-13.333c-155.936 0-257.853 94.506-257.853 265.6v150.4H402.667V880H576v477.04a687.805 687.805 0 00106.667 8.293c36.288 0 71.91-2.84 106.666-8.293V880H948.4" fill="#fff"/></svg>
                             </a>
                             <a href="#none">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300.251" version="1.1">
-                                    <path d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34M36.01 19.54H76.66l187.13 262.13h-40.66"/>
-                                   </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <path d="M385.4,52.6h69L303.7,224.9L481,459.4H342.1L233.4,317.2L108.9,459.4h-69l161.2-184.3L31,52.6h142.4l98.3,130L385.4,52.6z   M361.2,418.1h38.2L152.6,91.8h-41L361.2,418.1z"/>
+                                    </svg>
                             </a>
                             <a href="#none">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
@@ -379,10 +413,13 @@
                             </a>
                         </li>
                     </ul>
-                    <p>Terms & Conditions</p>
-                    <p>Privacy</p>
-                    <p>Cookies</p>
-                    <p>© Aston Martin 2024</p>
+                    <div class="last">
+                        <p>Terms & Conditions</p>
+                        <p>Privacy</p>
+                        <p>Cookies</p>
+                        <p>© Aston Martin 2024</p>
+                    </div>
+                    
                 </div>
 
             </div>
