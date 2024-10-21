@@ -1,11 +1,14 @@
-.sub_menu {
-    display: none;
+
+.header_area {
+    background: rgba(36, 36, 36, 0.7);
 }
 
+.header_area.active {
+    border-bottom: 1px solid #fff;
+}
 .header_area {
     width: 100%;
     height: 64px;
-    background: rgba(36, 36, 36, 0.7);
     position: fixed;
     top: 0;
     left: 0;
@@ -89,6 +92,46 @@
 #hamburger span:last-child {
     top: 100%;
     left: 0;
+}
+/* ----------------------------------------- */
+
+.sub_menu_box {
+    width: 100%;
+    height: 416px;
+    margin-top: 64px;
+    background: rgba(36, 36, 36, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    z-index: 99;
+}
+
+/* ---------------------- */
+
+.sub_menu {
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+}
+.sub_menu .model_wrap {
+    width: 1400px;
+    height: 100%;
+
+    margin: 21px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* .sub_menu .car {
+    margin-right: 175px;
+} */
+.sub_menu .car:last-child {
+    margin-right: 0;
+}
+.sub_menu_box .model img{
+    width: 219px;
+    height: 124px;
 }
 /* ---------------------------------------- */
 
@@ -256,10 +299,21 @@
 
 /* sub */
 .sec2 .sub_news {
+    position: relative;
     width: 1500px;
     height: 460px;
     overflow: hidden;
 }
+
+.news-pagination {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+
+    z-index: 999;
+}
+
 .sec2 .sub_news_wrapper {
     width: 1500px;
     display: flex;
@@ -277,7 +331,6 @@
 .sec2 .sub_news_text {
     width: 740px;
     margin-left: 20px;
-    position: relative;
 }
 .sec2 .date {
     font-size: 24px;
@@ -297,6 +350,7 @@
     bottom: 0;
     right: 0;
 }
+
 
 /* ---------------------------- */
 /* sec3 */
@@ -361,12 +415,12 @@
 
 .sec3 .story_mid {
     color: #121212;
-    font-size: 36px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 .sec3 .story_bot {
-    font-size: 28px;
+    font-size: 16px;
     color: #7d7e7e;
     font-weight: 500;
 
