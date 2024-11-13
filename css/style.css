@@ -428,7 +428,7 @@ body.bg {
 
 
 .sec3 .con_box {
-    padding: 60px 0;
+    padding: 60px 16px;
 }
 .sec3 .stories_header {
     color: #fff;
@@ -565,10 +565,11 @@ body.bg {
 
 .footer_area .footer_mid {
     width: 60%;
-    height: 22px;
+    height: auto;
     font-size: 9px;
     text-align: center;
     margin: 0 auto;
+    padding: 0 16px;
 }
 
 .footer_bot {
@@ -767,7 +768,18 @@ body.bg {
     .sec2 .sub_news .news_ex {
         font-size: 24px;
     }
-
+    .sec3 .story_box {
+        height: 580px;
+    }
+    .sec3 .story_top{
+        font-size: 24px;
+    }
+    .sec3 .story_mid {
+        font-size: 16px;
+    }
+    .sec3 .story_bot {
+        font-size: 12px;
+    }
     .footer_area .footer_right p {
         white-space: nowrap;
     }
@@ -777,6 +789,18 @@ body.bg {
         width: 800px;
     }
 
+    .sec1 .video_box {
+        height: auto;
+    }
+    .on_text .top_text {
+        font-size: 20px;
+    }
+    .on_text .mid_text {
+        font-size: 29px;
+    }
+    .sec1 .sec_ex {
+        font-size: 13px;
+    }
     .sec2 .sub_news {
         width: 100%;
         height: 680px;
@@ -811,16 +835,20 @@ body.bg {
 
     .sec3 {
         width: 100%;
-        height: 1500px;
+        height: auto;
     }
     .sec3 .story_box {
+        height: auto;
         flex-direction: column;
+    }
+    .sec3 .story_bot {
+        position: static;
     }
     .story_box1,
     .story_box2,
     .story_box3 {
         width: 100%;
-        margin: 0;
+        margin-bottom: 20px;
     }
 
     .footer_area .footer_left {
@@ -936,7 +964,9 @@ body.bg {
     .sec2 .sub_news_text {
         padding: 0 20px;
         width: 100%;
+        /* height: auto; */
     }
+
     .sec2 .news_text {
         font-size: 20px;
     }
@@ -945,6 +975,19 @@ body.bg {
     }
 }
 @media (max-width: 550px) {
+
+    .sec1 .box {
+        padding-bottom: 0;
+    }
+    .sec2 {
+        padding: 0;
+    }
+    .sec3 .con_box {
+        padding-top: 0;
+    }
+    .story_box img {
+        margin-bottom: 18px;
+    }
     .footer_area .footer_header {
         padding-top: 36px;
     }
