@@ -616,7 +616,7 @@ body.bg {
 /* ------------------------------------------------------------- */
 @media (max-width: 1570px) {
     .main_section .con_box{
-        width: 1200px;
+        width: 100%;
     }
 
 
@@ -634,6 +634,11 @@ body.bg {
 }
 
 @media (max-width: 1440px) {
+    .header_area .con_box {
+        width: 100%;
+        /* height: auto; */
+    }
+    
     .header_area .main_menu,
     .header_area .header_icon_box {
         display: none;
@@ -716,6 +721,9 @@ body.bg {
         display: none;
     }
 
+    .footer_area {
+        height: auto;
+    }
 }
 @media (max-width : 1280px) {
     .main_section .con_box {
@@ -887,7 +895,7 @@ body.bg {
         width: 100%;
         height: 95px;
         position: relative;
-        margin-top: 80px;
+        margin-top: 20px;
 
         white-space: nowrap;
     }
@@ -973,11 +981,31 @@ body.bg {
     .news-pagination {
         display: none;
     }
+    .header_area .main_menu.active {
+        width: 100%;
+        align-items: center;
+    }
 }
 @media (max-width: 550px) {
-
+    .main_banner .banner_car_tag {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main_section .con_box {
+        padding: 0 16px;
+    }
     .sec1 .box {
         padding-bottom: 0;
+    }
+    .on_text .top_text  {
+        font-size: 16px;
+    }
+    .on_text .mid_text {
+        font-size: 24px;
+    } 
+
+    .sec1 .sec_ex {
+        font-size: 9px;
     }
     .sec2 {
         padding: 0;
@@ -991,9 +1019,12 @@ body.bg {
     .footer_area .footer_header {
         padding-top: 36px;
     }
+    .footer_area .footer_top {
+        display: none;
+    }
 
     .footer_area {
-        padding: 0;
+        padding: 20px 16px;
     }
     .footer .footer_top {
         padding: 0 20px;
